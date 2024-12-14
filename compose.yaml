@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "./:/app"
+    ports:
+      - 8000:8000
+    command: "mkdocs serve --config-file /app/mkdocs.yml --dev-addr 0.0.0.0:8000"
+    tty: true
+    init: true
+    stdin_open: true
