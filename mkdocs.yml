@@ -1,0 +1,39 @@
+site_name: My EXP
+site_author: sunfield16
+copyright: Copyright &copy; 2024 sunfield16
+
+theme:
+  name: material
+  custom_dir: 'overrides/'
+  # highlightjs: true
+
+plugins:
+  - search:
+      lang: ja
+  - roamlinks # roamlinksを使う（WikiLinkでリンクできるようにするため）
+  - mkdocs-backlinks # バックリンクを入れる
+
+extra_css:
+  - css/main.css
+extra_javascript:
+  - javascripts/external/DOMPurify/purify.min.js # ページプレビュー時のJSサニタイズ用
+  - javascripts/pagePreview.js # ページプレビュー用のスクリプト
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: "https://github.com/sunfield16"
+
+# ページとして出さないディレクトリ
+exclude_docs: |
+  contents/__PRIVATE/
+  contents/.obsidian/
+
+# Markdown拡張
+markdown_extensions:
+  - pymdownx.highlight: # コードハイライトを使う
+      auto_title: true # コードの言語を表示する
+  - pymdownx.superfences # フェンス（```で囲まれた部分）の構文サポート
+  - pymdownx.keys # キーボードのキーを画像で分かりやすくする（++ctrl+alt+delete++）
+  - pymdownx.mark # ==マーク==
+  - pymdownx.tilde # ~~チルダ（取り消し線）~~

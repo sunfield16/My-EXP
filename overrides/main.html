@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+  {% if backlinks %}
+  <hr>
+  <h3>ここにリンクしているページ</h3>
+  <ul>
+      {% for backlink in backlinks %}
+      <li><a href="/{{ backlink.url }}">{{ backlink.title }}</a></li>
+      {% endfor %}
+  </ul>
+  {% endif %}
+{% endblock %}
