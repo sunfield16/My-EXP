@@ -20,4 +20,4 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install mkdocs-roamlinks-plugin
       - run: pip install mkdocs-backlinks
-      - run: mkdocs gh-deploy
+      - run: mkdocs gh-deploy --force
