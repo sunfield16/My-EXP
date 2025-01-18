@@ -1,6 +1,7 @@
 site_name: My EXP
 site_author: sunfield16
 copyright: Copyright &copy; 2024 sunfield16
+repo_name: My-EXP
 
 theme:
   name: material

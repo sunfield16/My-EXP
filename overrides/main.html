@@ -7,7 +7,7 @@
   <h3>ここにリンクしているページ</h3>
   <ul>
       {% for backlink in backlinks %}
-      <li><a href="/{{ backlink.url }}">{{ backlink.title }}</a></li>
+      <li><a href="/{{ config.repo_name }}/{{ backlink.url }}">{{ backlink.title }}</a>
       {% endfor %}
   </ul>
   {% endif %}
