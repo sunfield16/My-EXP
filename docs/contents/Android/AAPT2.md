@@ -1,4 +1,4 @@
-https://developer.android.com/tools/aapt2?hl=ja
+<https://developer.android.com/tools/aapt2?hl=ja>
 
 `Android Asset Packaging Tool`の略で、AndroidStudioやGradleが  
 アプリのリソースをビルドするときに使うビルドツール。
