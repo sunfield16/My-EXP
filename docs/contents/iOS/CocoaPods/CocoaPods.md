@@ -30,7 +30,7 @@ cd [xcodeprojがあるディレクトリ]
 pod init
 ```
 
-`init`を実行すると、`Podfile`という設定ファイルが生成される。  
+`init`を実行すると、[[Podfile]]という設定ファイルが生成される。  
 中身は大体こんな感じ。
 ```
 # Uncomment the next line to define a global platform for your project
@@ -63,19 +63,13 @@ CocoaPodsを導入したプロジェクトには`xcworkspace`という拡張子�
 Xcodeで開いて、正常にビルドできることを確認する。
 
 ## ライブラリを追加・更新したいとき
-当然ライブラリを追加・更新したくなる場合がある。  
-その時はまた`Podfile`にライブラリを追記する。
-
-追記後に下記を実行すると、また設定に従ってライブラリを  
-ダウンロードしてくれる。
+`Podfile`にライブラリを追記して`update`を実行すると、  
+更新された設定に従ってライブラリをダウンロードしてくれる。
 ```bash
 pod update
 ```
 
-## `Podfile.lock`について
-`pod install`をすると、同時に`Podfile.lock`が生成される。  
-このファイルには、現在インストールされているライブラリのバージョンや依存関係、  
-CocoaPodsのバージョン等が記載されている。
-
-現在アプリに入っているライブラリのバージョンを確認したい場合は、  
-これを見ると分かりやすい。
+## 関連
+* [[Podfile]]
+* [[Podfile.lock]]
+* [[Acknowledgements]]
