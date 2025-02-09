@@ -7,3 +7,6 @@ private Subject<Unit> sceneSubject = new Subject<Unit>();
 // メッセージを通知する時
 sceneSubject.OnNext(Unit.Default)
 ```
+
+## 関連
+* [[UniRx]]

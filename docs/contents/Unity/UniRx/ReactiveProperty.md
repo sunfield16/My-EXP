@@ -43,3 +43,6 @@ public class HogeHoge : MonoBehavior
 	public IReadOnlyReactiveProperty<int> HP => _hp;
 }
 ```
+
+## 関連
+* [[UniRx]]
