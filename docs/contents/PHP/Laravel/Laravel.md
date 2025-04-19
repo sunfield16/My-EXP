@@ -15,3 +15,4 @@ PHPのMVCフレームワークの1つ。
 ## 関連
 * [[artisan]]
 * [[Laravelの操作まとめ]]
+* [[Laravel Collective]]
