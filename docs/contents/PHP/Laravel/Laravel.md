@@ -15,4 +15,5 @@ PHPのMVCフレームワークの1つ。
 ## 関連
 * [[artisan]]
 * [[Laravelの操作まとめ]]
+* [[Laravelの名前空間]]
 * [[Laravel Collective]]
