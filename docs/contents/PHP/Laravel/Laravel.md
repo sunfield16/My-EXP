@@ -17,3 +17,7 @@ PHPのMVCフレームワークの1つ。
 * [[Laravelの操作まとめ]]
 * [[Laravelの名前空間]]
 * [[Laravel Collective]]
+* 付属している・内部で使用されているライブラリ
+	- [[Carbon]]
+	- [[Symfony]]
+	- [[Faker]]
