@@ -1,19 +1,12 @@
-## 参考
-iOS14でのIDFA取得  
-<https://qiita.com/yofuru/items/213b88b85553631204e4>
+---
+create_date: 2025-07-15
+modificate_date: 2025-07-15
+---
+<https://developer.apple.com/documentation/apptrackingtransparency/>  
+<https://developer.apple.com/jp/app-store/user-privacy-and-data-use/>
 
-## AppTrackingTransparency
-AppTrackingTransparencyは、広告目的によるユーザーの端末データ(IDFA)取得の許可を  
-ユーザーに求めるためのフレームワーク。
-
+iOSでユーザーのトラッキングや[[IDFA]]取得の許可をユーザーに求めるためのフレームワーク。  
 iOS14から、IDFAの取得にはこれによる許可リクエストが必須となっている。
-
-## そもそもIDFAとは
-IDFAは `Identifier For Advertising` の略で、主に広告目的で使用する端末固有のID。  
-一般的には「トラッキングID」と呼ばれる。
-
-各広告プラットフォーム(AppsFlyer, Tapjoy等)はこれを使用して、  
-ユーザーに合った広告を表示したり、分析のためにアプリ内の行動追跡を行ったりする。
 
 ## ATTrackingManager
 `ATTrackingManager`で下記を行うことが可能。
@@ -75,3 +68,6 @@ NotDetermined | 未確定
     }
 }];
 ```
+
+## 参考
+<https://qiita.com/yofuru/items/213b88b85553631204e4>
