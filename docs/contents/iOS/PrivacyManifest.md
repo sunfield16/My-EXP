@@ -22,7 +22,7 @@ NSPrivacyTrackingをtrueにした場合は設定必須。
 ここで設定したドメインにアプリが接続しても自動的にブロックされるとのこと。
 
 ### NSPrivacyCollectedDataTypes
-https://developer.apple.com/jp/app-store/app-privacy-details/#data-type
+<https://developer.apple.com/jp/app-store/app-privacy-details/#data-type>
 
 ユーザーデータを収集する場合は、  
 それぞれの種類について以下のような項目を設定する。  
