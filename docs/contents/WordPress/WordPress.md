@@ -14,3 +14,5 @@ OSSとしては`WordPress.org`や`セルフホスト型`という風に呼ばれ
 
 ## 関連
 * [[wpcom]]
+* [[WordPress REST API]]
+* [[WordPressのディレクトリとファイル]]
