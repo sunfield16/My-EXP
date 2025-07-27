@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () =>
       removePreviewIfExist();
       clearTimeout(previewHideTimer);
       previewDiv = document.createElement('div');
-      previewDiv.classList.add('preview-card');
+      previewDiv.classList.add('preview-card', 'md-typeset');
       
       if(contentCache.has(link.href))
       {
