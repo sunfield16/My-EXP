@@ -9,6 +9,22 @@
     font-size:1.3em;
 }
 
+/* フロントマターがある場合の表示 */
+.header-frontmatter
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.header-frontmatter > p
+{
+    padding-right: 10px;
+}
+
 /* `##` で記述する見出し */
 article > h2
 {

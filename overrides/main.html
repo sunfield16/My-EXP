@@ -1,6 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
+  {% if page and page.meta %}
+    <section class="header-frontmatter">
+      {% if page.meta.create_date %}
+        <p>
+          created: {{ page.meta.create_date }}
+        </p>
+      {% endif %}
+      {% if page.meta.modificate_date %}
+        <p>
+          modificated: {{ page.meta.modificate_date }}
+        </p>
+      {% endif %}
+    </section>
+  {% endif %}
   {{ super() }}
   {% if backlinks %}
   <hr>
