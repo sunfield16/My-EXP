@@ -1,4 +1,6 @@
 const contentCache = new Map();
+let previewDiv = null;
+let previewHideTimer = null;
 
 document.addEventListener('DOMContentLoaded', () => 
 {
@@ -12,7 +14,9 @@ document.addEventListener('DOMContentLoaded', () =>
     }
     link.addEventListener('mouseenter', async (event) =>
     {
-      const previewDiv = document.createElement('div');
+      removePreviewIfExist();
+      clearTimeout(previewHideTimer);
+      previewDiv = document.createElement('div');
       previewDiv.classList.add('preview-card');
       
       if(contentCache.has(link.href))
@@ -64,11 +68,43 @@ document.addEventListener('DOMContentLoaded', () =>
       previewDiv.style.position = 'absolute';
       previewDiv.style.top = `${previewDivY}px`;
       previewDiv.style.left = `${event.pageX + 10}px`;
-      
-      link.addEventListener('mouseleave', () =>
+
+      // プレビューがマウスが離れた場合はプレビュー削除
+      previewDiv.addEventListener('mouseleave', () =>
       {
-        previewDiv.remove();
+        scheduleHidePreview();
       });
+
+      // プレビューにマウスが乗っていたらプレビューを表示したままにする
+      previewDiv.addEventListener('mouseenter', () =>
+      {
+        clearTimeout(previewHideTimer);
+      });
+    });
+
+    // リンクからマウスが離れた場合もプレビュー削除
+    link.addEventListener('mouseout', () =>
+    {
+      scheduleHidePreview();
     });
   });
 });
+
+// 時間差でプレビューの削除をする
+// （マウスが離れてすぐだとリンクからプレビューにマウスを動かす前に削除されてしまう）
+function scheduleHidePreview()
+{
+  previewHideTimer = setTimeout(() =>
+  {
+    removePreviewIfExist();
+  }, 500);
+}
+
+function removePreviewIfExist()
+{
+  if(previewDiv)
+  {
+    previewDiv.remove();
+    previewDiv = null;
+  }
+}
