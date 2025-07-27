@@ -52,9 +52,17 @@ document.addEventListener('DOMContentLoaded', () =>
       }
 
       document.body.appendChild(previewDiv);
-      // TODO: 画面の下の方でマウスホバーしたときはプレビューを上に出す
+      
+      // 画面の下の方でマウスホバーしたときはプレビューを上に出す（見えなくなるので）
+      const innerHeight = window.innerHeight;
+      let previewDivY = event.pageY + 10;
+      if(event.screenY > (innerHeight * 0.4))
+      {
+        previewDivY = event.pageY - previewDiv.clientHeight;
+      }
+
       previewDiv.style.position = 'absolute';
-      previewDiv.style.top = `${event.pageY + 10}px`;
+      previewDiv.style.top = `${previewDivY}px`;
       previewDiv.style.left = `${event.pageX + 10}px`;
       
       link.addEventListener('mouseleave', () =>
