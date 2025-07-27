@@ -19,41 +19,15 @@ document.addEventListener('DOMContentLoaded', () =>
       previewDiv = document.createElement('div');
       previewDiv.classList.add('preview-card', 'md-typeset');
       
-      if(contentCache.has(link.href))
+      // プレビューするページの内容を取得する
+      const sanitizedPage = await fetchPreviewPage(link);
+      if(sanitizedPage == null)
       {
-        const sanitizedArticle = DOMPurify.sanitize(contentCache.get(link.href));
-        previewDiv.innerHTML = sanitizedArticle;
+        sanitizedPage = 'プレビューを取得できません。';
       }
-      else
-      {
-        try
-        {
-          // リンク先のページの内容を取得
-          const response = await fetch(link.href);
-          const html = await response.text();
-  
-          // ページ構造から記事の部分だけを抜き出す
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(html, 'text/html');
-          const mainContent = doc.querySelector('article');
-          if (mainContent)
-          {
-            contentCache.set(link.href, mainContent.innerHTML);
 
-            // XSS対策として、記事はサニタイズしてから表示する
-            const sanitizedArticle = DOMPurify.sanitize(mainContent.innerHTML);
-            previewDiv.innerHTML = sanitizedArticle;
-          }
-          else
-          {
-            previewDiv.innerHTML = 'プレビューを取得できません。';
-          }
-        }
-        catch (error)
-        {
-          previewDiv.innerHTML = 'プレビューを取得できません。';
-        }
-      }
+      // XSS対策として、記事はサニタイズしてから表示する
+      previewDiv.innerHTML = sanitizedPage;
 
       document.body.appendChild(previewDiv);
       
@@ -106,5 +80,55 @@ function removePreviewIfExist()
   {
     previewDiv.remove();
     previewDiv = null;
+  }
+}
+
+// プレビュー先の内容を取得する
+async function fetchPreviewPage(link)
+{
+  if(contentCache.has(link.href))
+  {
+    const sanitizedPage = DOMPurify.sanitize(contentCache.get(link.href));
+    return sanitizedPage;
+  }
+
+  // リンク先のページの内容を取得
+  const mainContent = await fetchPreviewContent(link);
+  if (!mainContent)
+  {
+    return null;
+  }
+
+  contentCache.set(link.href, mainContent.innerHTML);
+  return DOMPurify.sanitize(mainContent.innerHTML);
+}
+
+async function fetchPreviewContent(link)
+{
+  if (link.hostname !== window.location.hostname)
+  {
+    return null;
+  }
+
+  // リンク先のページの内容を取得
+  try 
+  {
+    const response = await fetch(link.href);
+    const html = await response.text();
+
+    // ページ構造から記事の部分だけを抜き出す
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const mainContent = doc.querySelector('article');
+    if(!mainContent)
+    {
+      return null;
+    }
+
+    return mainContent;
+  }
+  catch (error)
+  {
+    return null;
   }
 }
