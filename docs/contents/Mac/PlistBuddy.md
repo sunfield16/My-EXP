@@ -1,4 +1,7 @@
-## PlistBuddy
+---
+create_date: 2025-07-31
+modificate_date: 2025-07-31
+---
 `plist`を編集できるコマンド。Macに標準搭載されている。
 
 シェルスクリプト等で`plist`を触りたい場合に、  
@@ -35,3 +38,6 @@ $ /usr/libexec/PlistBuddy -c "add foo string bar" ./hoge.plist
 ```bash
 $ /usr/libexec/PlistBuddy -c "set piyo 3" ./hoge.plist
 ```
+
+## 参考
+<https://github.com/captam3rica/plistbuddy-guide>
