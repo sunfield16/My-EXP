@@ -1,3 +1,7 @@
+---
+create_date: 2025-08-07
+modificate_date: 2025-08-07
+---
 <https://ja.wikipedia.org/wiki/SSH_File_Transfer_Protocol>  
 <https://dev.classmethod.jp/articles/what-sftp/>
 
@@ -6,3 +10,6 @@
 
 平文でデータのやり取りが行われるFTPに対し、よりセキュリティの高い  
 データの転送が可能。
+
+## 関連
+* [[sftp（コマンド）]]
