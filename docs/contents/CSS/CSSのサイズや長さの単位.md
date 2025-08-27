@@ -1,13 +1,19 @@
+---
+create_date: 2025-08-27
+modificate_date: 2025-08-27
+---
+<https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Styling_basics/Values_and_units>
+
 CSS上でサイズや長さを指定するのに使われる型。  
 さまざまな単位で指定を行うことができる。
 
 ## 固定長
 px以外はCSSで使われることはあまりない。
 
-* `cm` ... 96px/2.54
-* `mm` ... 1/10 cm
-* `in` ... 2.54cm = 96px
-* `px` ... 1/96 in
+* cm ... 96px/2.54
+* mm ... 1/10 cm
+* in ... 2.54cm = 96px
+* px ... 1/96 in
 
 ## 相対長
 それぞれ他の要素を参照して、そこから数値が決まる。  
