@@ -10,3 +10,8 @@ modificate_date: 2025-09-18
 
 iOSアプリの開発において、デバッグ用の端末に開発中のアプリをインストールしたり、  
 アプリを申請する時に必要になる。
+
+Xcode16以降では、デフォルトで以下の場所に保存される。
+```
+~/Library/Developer/Xcode/UserData/Provisioning\ Profiles
+```

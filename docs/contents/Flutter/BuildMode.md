@@ -24,4 +24,4 @@ modificate_date: 2025-09-18
 
 ## 関連
 * [[ホットリロードが反映されないケース]]
-* [[FlutterのReleaseアプリとシミュレータ]]
+* [[FlutterのReleaseアプリはiOSシミュレータで実行できない]]

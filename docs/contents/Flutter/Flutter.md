@@ -23,5 +23,5 @@ Googleが開発したオープンソースのフレームワーク。
 	- [[pub-cache]]
 	- [[BuildMode]]
 * 仕様について
-	- [[FlutterのReleaseアプリとシミュレータ]]
+	- [[FlutterのReleaseアプリはiOSシミュレータで実行できない]]
 	- [[ホットリロードが反映されないケース]]
