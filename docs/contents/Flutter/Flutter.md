@@ -26,3 +26,5 @@ Googleが開発したオープンソースのフレームワーク。
     - [[Flutterが制御するもの・しないもの]]
 	- [[FlutterのReleaseアプリはiOSシミュレータで実行できない]]
 	- [[ホットリロードが反映されないケース]]
+	- [[fromEnvironmentはconstのみ対応]]
+	- [[FlutterでOSを判定する]]
