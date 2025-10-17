@@ -1,6 +1,6 @@
 ---
 create_date: 2025-07-09
-modificate_date: 2025-07-09
+modificate_date: 2025-10-17
 ---
 <https://flutter.dev/>  
 <https://docs.flutter.dev/>
@@ -19,6 +19,10 @@ Googleが開発したオープンソースのフレームワーク。
 * パッケージ
 	- [[flutter_secure_storage]]
 	- [[sqflite]]
+	- [[flutter_inappwebview]]
+	- [[webview_flutter]]
+* クラス
+    - [[WidgetsFlutterBinding]]
 * 用語
 	- [[pub-cache]]
 	- [[BuildMode]]

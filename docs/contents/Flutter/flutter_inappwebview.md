@@ -8,10 +8,13 @@ modificate_date: 2025-10-16
 [[Flutter]]で、WebViewのWidgetやアプリ内ブラウザを組み込むためのパッケージの1つ。
 
 WebViewやアプリ内ブラウザとして以下のクラスを提供している。
-* InAppWebViewController
-* ChromeSafariBrowser
-* InAppBrowser
-* HeadlessInAppWebView
+* WebView
+    - [[InAppWebView]]
+    - HeadlessInAppWebView
+* アプリ内ブラウザ
+    - [[ChromeSafariBrowser]]
+    - InAppBrowser
 
 ## 関連
 * [[flutter_inappwebviewでリンクを踏んだか判定する]]
+* [[webview_flutter]]
