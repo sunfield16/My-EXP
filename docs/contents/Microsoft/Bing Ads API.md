@@ -7,7 +7,8 @@ modificate_date: 2025-11-07
 [[Microsoft Advertising]]をプログラムから利用するためのAPI。  
 使用するためにはユーザーの資格情報と開発者トークンが必要。
 
-また、認証には[[Microsoft Entra]]を使用する。
+* 認証には[[Microsoft Entra]]を使用する
+* APIのリクエストは[[SOAP]]とJSONのどちらかを使用可能
 
 ## 関連
 * [[Microsoft Advertising]]に属する製品群
