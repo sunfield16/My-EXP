@@ -1,6 +1,9 @@
+---
+create_date: 2025-11-28
+modificate_date: 2025-11-28
+---
+<https://gtd-japan.jp/>  
 <https://ja.wikipedia.org/wiki/Getting_Things_Done>  
-<https://qiita.com/YutaManaka/items/a1c917951b1ef00d76e2>  
-<https://asana.com/ja/resources/getting-things-done-gtd>
 
 `Get Things Done`の略で、タスク管理やタイムマネジメントで使用する手法の1つ。
 
@@ -63,3 +66,7 @@
 ## 実行する
 「次のアクション」にあるものを、ひたすら実行する。  
 優先順位はあまり気にしない。
+
+## 参考
+* <https://qiita.com/YutaManaka/items/a1c917951b1ef00d76e2>
+* <https://asana.com/ja/resources/getting-things-done-gtd>
