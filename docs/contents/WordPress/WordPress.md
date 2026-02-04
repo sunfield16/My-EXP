@@ -16,3 +16,5 @@ OSSとしては`WordPress.org`や`セルフホスト型`という風に呼ばれ
 * [[wpcom]]
 * [[WordPress REST API]]
 * [[WordPressのディレクトリとファイル]]
+* TIPS
+    - [[WordPressで画像がアイキャッチに使われているかどうか検索]]
