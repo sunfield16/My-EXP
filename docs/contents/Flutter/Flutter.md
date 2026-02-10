@@ -26,6 +26,7 @@ Googleが開発したオープンソースのフレームワーク。
 * 用語
 	- [[pub-cache]]
 	- [[BuildMode]]
+	- [[isolate]]
 * 仕様について
     - [[Flutterが制御するもの・しないもの]]
 	- [[FlutterのReleaseアプリはiOSシミュレータで実行できない]]
@@ -34,4 +35,5 @@ Googleが開発したオープンソースのフレームワーク。
 	- [[FlutterでOSを判定する]]
 * Tips
     - [[Flutterのキャッシュをクリアする]]
+    - [[FlutterでFirebaseを使うときに見る資料]]
 * [[Impeller]]
