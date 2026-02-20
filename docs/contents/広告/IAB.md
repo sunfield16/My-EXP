@@ -1,3 +1,7 @@
+---
+create_date: 2026-02-20
+modificate_date: 2026-02-20
+---
 <https://www.iab.com/>  
 <https://ja.wikipedia.org/wiki/Interactive_Advertising_Bureau>
 
@@ -6,3 +10,6 @@
 
 日本からも一般社団法人「JIAA」がIABを構成する組織として加わっている。  
 <https://www.jiaa.org/news/release/20170201_iabjapan/>
+
+## 関連
+* [[TCF]]
