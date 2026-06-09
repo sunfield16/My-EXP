@@ -52,3 +52,8 @@ PHPのWeb開発フレームワークの1つ。
 * Component（各Controllerで使いまわせる部品）
     - 認証・バリデーション
     - ページング処理
+
+## 関連
+* [[CakePHP基本操作]]
+* [[CakePHPでORMを取得する]]
+* [[CakePHPで定数やDB外の設定データを記述する]]
