@@ -1,4 +1,7 @@
-## zipコマンド
+---
+create_date: 2026-06-29
+modificate_date: 2026-06-29
+---
 複数のファイルをzip形式に圧縮する。  
 オプションによって、
 
@@ -42,3 +45,8 @@ zip -r ./hoge.zip ./hoge
 # 「hoge」ディレクトリ以下全て圧縮率最大でzipにする
 zip -r -9 ./hoge.zip ./hoge
 ```
+
+## 関連
+* [[gzip]]
+* [[tar]]
+* [[zipとgzipの違い]]
