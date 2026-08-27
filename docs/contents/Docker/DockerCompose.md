@@ -1,3 +1,9 @@
+---
+create_date: 2026-08-07
+modificate_date: 2026-08-07
+---
+<https://docs.docker.com/compose/intro/compose-application-model/>
+
 [[Docker]]で複数のコンテナの連携を簡単に行うためのツール。  
 
 Dockerでは1つのコンテナを起動するにも様々な設定をつける必要がある。  
@@ -55,3 +61,4 @@ volumes:
 
 ## 関連
 * [[コンテナのdownに時間がかかる場合]]
+* [[複数のdocker-composeファイルを読み込む]]
