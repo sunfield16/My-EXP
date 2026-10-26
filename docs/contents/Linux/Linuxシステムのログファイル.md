@@ -8,6 +8,7 @@ modificate_date: 2026-09-16
     - 不正ログイン狙いの試行がわかる
 * wtmp: ログイン・ログアウトの履歴
     - wtmpは成功、btmpは失敗のログ
+    - lastコマンドで確認できる
 * messages: 一般的なサービス・カーネル・エラーのログ
     - CentOSの場合は`syslog`や`secure`が該当
 * maillog: メールの送受信ログ
